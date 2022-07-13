@@ -82,7 +82,7 @@ for (int i = array.Length - 1; i > 0; i--)
     int j = i;
     for (j = 0; j < i; j++)
     {
-        if (array[j] > array[j + 1])
+        if (Math.Abs(array[j]) > Math.Abs(array[j + 1]))
         {
             int temp = array[j];
             array[j] = array[j + 1];
